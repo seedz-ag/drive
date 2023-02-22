@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SeedzDrive", "SeedzDrive\SeedzDrive.csproj", "{333E376F-D0FA-4A99-AAC0-2D1CC7D81CBF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "SeedzDrive\Installer\Setup\Setup.vdproj", "{ECC20BE0-5349-486A-8FD1-E7441DC3DAC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{333E376F-D0FA-4A99-AAC0-2D1CC7D81CBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{333E376F-D0FA-4A99-AAC0-2D1CC7D81CBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{333E376F-D0FA-4A99-AAC0-2D1CC7D81CBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{333E376F-D0FA-4A99-AAC0-2D1CC7D81CBF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECC20BE0-5349-486A-8FD1-E7441DC3DAC3}.Debug|Any CPU.ActiveCfg = Debug
+		{ECC20BE0-5349-486A-8FD1-E7441DC3DAC3}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,32 @@
+﻿<Window x:Class="SeedzDrive.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SeedzDrive"
+        mc:Ignorable="d"
+        Title="{x:Static local:Resource.ConfigurationWindowTitle}" Height="372" Width="374" WindowStartupLocation="CenterScreen" FontSize="24" FontFamily="Microsoft Sans Serif" ResizeMode="CanMinimize">
+    <Grid Background="White" Margin="0,0,0,-32">
+        <Image  HorizontalAlignment="Left" Height="100" Margin="13,10,0,0" VerticalAlignment="Top" Width="308" Source="/logo.png" Stretch="UniformToFill"/>
+        <Label Content="ClientId:" HorizontalAlignment="Left" Margin="10,119,0,0" VerticalAlignment="Top" Foreground="#FF1E7A75" FontWeight="Bold"/>
+        <TextBox Name="ClientIdTxb" ToolTip="{x:Static local:Resource.ConfigurationWindowClientIdTextbox}" Height="30" HorizontalAlignment="Left" Margin="118,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="221" Background="WhiteSmoke" BorderBrush="White"/>
+        <Label Content="Secret:" HorizontalAlignment="Left" Margin="10,163,0,0" VerticalAlignment="Top" Foreground="#FF1E7A75" FontWeight="Bold"/>
+        <TextBox Name="SecretTxb" ToolTip="{x:Static local:Resource.ConfigurationWindowSecretTextbox}" Height="30" HorizontalAlignment="Left" Margin="104,167,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="235" BorderBrush="White" Background="WhiteSmoke"/>
+        <Label Content="{x:Static local:Resource.ConfigurationWindowSelectFolderLabel}" HorizontalAlignment="Left" Margin="10,214,0,0" VerticalAlignment="Top" Foreground="#FF1E7A75" FontWeight="Bold"/>
+        <TextBox Name="FolderTxb" ToolTip="{x:Static local:Resource.ConfigurationWindowFolderTextbox}" Height="30" HorizontalAlignment="Left" Margin="103,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="157" Background="WhiteSmoke" BorderBrush="White"/>
+        <Button Name="SelectFolderBtn" Content="{x:Static local:Resource.ConfigurationWindowSelectFolderButton}" HorizontalAlignment="Left" Margin="265,217,0,0" VerticalAlignment="Top" Click="SelectFolderBtn_OnClick" Background="#FF1E7A75" Foreground="White" FontSize="22" Height="30" Width="70">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Name="SaveBtn" Content="{x:Static local:Resource.ConfigurationWindowSaveButton}" HorizontalAlignment="Left" Margin="140,268,0,0" VerticalAlignment="Top" Click="SaveBtn_OnClick" Background="#FF1E7A75" Foreground="White" BorderBrush="White" Width="83" Height="43">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="5"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
