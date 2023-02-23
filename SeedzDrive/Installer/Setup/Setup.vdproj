@@ -21,13 +21,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_2D06E9B79B204EAE995A54484AF27A39"
+        "MsmKey" = "8:_5B1BE1A7877E444F8D6D2050AD77DBDA"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_5B1BE1A7877E444F8D6D2050AD77DBDA"
+        "MsmKey" = "8:_BB9D6072FD8746239BF3D07E9DA23A9A"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -49,6 +49,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -65,6 +81,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
     }
     "Deployable"
@@ -96,9 +128,9 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2D06E9B79B204EAE995A54484AF27A39"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_BB9D6072FD8746239BF3D07E9DA23A9A"
             {
-            "SourcePath" = "8:..\\..\\appicon.ico"
+            "SourcePath" = "8:..\\..\\icons\\appicon.ico"
             "TargetName" = "8:appicon.ico"
             "Tag" = "8:"
             "Folder" = "8:_46911C91AE3040D1AA54241F8A85E478"
@@ -173,7 +205,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Seedz Drive"
         "ProductCode" = "8:{7B55EAD5-CDD6-41E0-848B-F7A375F16B39}"
-        "PackageCode" = "8:{4A206FC7-4357-48E3-8AF7-7DC25A12AF56}"
+        "PackageCode" = "8:{92824F51-D210-453F-890A-0E99544B9AE1}"
         "UpgradeCode" = "8:{295EE48A-E732-45B0-BD2F-AE26BCBE9108}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -190,7 +222,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Seedz Drive is file integration application for Seedz Data HUB."
         "ARPURLINFOABOUT" = "8:https://www.seedz.ag"
-        "ARPPRODUCTICON" = "8:_2D06E9B79B204EAE995A54484AF27A39"
+        "ARPPRODUCTICON" = "8:"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -262,6 +294,70 @@
                                 {
                                 }
                             }
+                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_E7A8B64073C142A2A7DBFA7CCBD5035A"
+                            {
+                            "Name" = "8:Microsoft"
+                            "Condition" = "8:"
+                            "AlwaysCreate" = "11:FALSE"
+                            "DeleteAtUninstall" = "11:FALSE"
+                            "Transitive" = "11:FALSE"
+                                "Keys"
+                                {
+                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_1D1A82EFB2B54D458387DE3647E66158"
+                                    {
+                                    "Name" = "8:Windows"
+                                    "Condition" = "8:"
+                                    "AlwaysCreate" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "Transitive" = "11:FALSE"
+                                        "Keys"
+                                        {
+                                            "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_350588B83D534DD39F2CD68A89F201F2"
+                                            {
+                                            "Name" = "8:CurrentVersion"
+                                            "Condition" = "8:"
+                                            "AlwaysCreate" = "11:FALSE"
+                                            "DeleteAtUninstall" = "11:FALSE"
+                                            "Transitive" = "11:FALSE"
+                                                "Keys"
+                                                {
+                                                    "{60EA8692-D2D5-43EB-80DC-7906BF13D6EF}:_79BC391987CD44FE8D04E81C961A546C"
+                                                    {
+                                                    "Name" = "8:Run"
+                                                    "Condition" = "8:"
+                                                    "AlwaysCreate" = "11:FALSE"
+                                                    "DeleteAtUninstall" = "11:FALSE"
+                                                    "Transitive" = "11:FALSE"
+                                                        "Keys"
+                                                        {
+                                                        }
+                                                        "Values"
+                                                        {
+                                                            "{ADCFDA98-8FDD-45E4-90BC-E3D20B029870}:_DFBCB47BE2704FD6953951C12156137E"
+                                                            {
+                                                            "Name" = "8:Seedz Drive"
+                                                            "Condition" = "8:"
+                                                            "Transitive" = "11:FALSE"
+                                                            "ValueTypes" = "3:1"
+                                                            "Value" = "8:[TARGETDIR]SeedzDrive.exe"
+                                                            }
+                                                        }
+                                                    }
+                                                }
+                                                "Values"
+                                                {
+                                                }
+                                            }
+                                        }
+                                        "Values"
+                                        {
+                                        }
+                                    }
+                                }
+                                "Values"
+                                {
+                                }
+                            }
                         }
                         "Values"
                         {
@@ -304,7 +400,7 @@
             "Target" = "8:_0EDC0C0F1DE84B5984C5C3B8E4F30904"
             "Folder" = "8:_12F65188795644E6AADCBC1B65FE6E4C"
             "WorkingFolder" = "8:_46911C91AE3040D1AA54241F8A85E478"
-            "Icon" = "8:_2D06E9B79B204EAE995A54484AF27A39"
+            "Icon" = "8:_BB9D6072FD8746239BF3D07E9DA23A9A"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_34A512682C5341A39272B2E689049690"
@@ -318,7 +414,7 @@
             "Target" = "8:_0EDC0C0F1DE84B5984C5C3B8E4F30904"
             "Folder" = "8:_A433C1F56ADF40CDB96AF181F5BB934E"
             "WorkingFolder" = "8:_46911C91AE3040D1AA54241F8A85E478"
-            "Icon" = "8:_2D06E9B79B204EAE995A54484AF27A39"
+            "Icon" = "8:_BB9D6072FD8746239BF3D07E9DA23A9A"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_45731D2BF67E43F48290EB65995CCA2A"
@@ -332,7 +428,7 @@
             "Target" = "8:_0EDC0C0F1DE84B5984C5C3B8E4F30904"
             "Folder" = "8:_46911C91AE3040D1AA54241F8A85E478"
             "WorkingFolder" = "8:_46911C91AE3040D1AA54241F8A85E478"
-            "Icon" = "8:_2D06E9B79B204EAE995A54484AF27A39"
+            "Icon" = "8:_BB9D6072FD8746239BF3D07E9DA23A9A"
             "Feature" = "8:"
             }
         }

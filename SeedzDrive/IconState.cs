@@ -18,9 +18,9 @@ internal sealed class IconState
     private static LogsWindow _logsWindow = new LogsWindow();
     private static MainWindow _mainWindow = new MainWindow();
 
-    public Icon Icon = new("appicon.ico");
-    public Icon IconGrey = new("appicon-grey.ico");
-    public Icon IconRed = new("appicon-red.ico");
+    public Icon Icon = new(Environment.ProcessPath.Replace("SeedzDrive.exe","") + "icons\\appicon.ico");
+    public Icon IconGrey = new(Environment.ProcessPath.Replace("SeedzDrive.exe", "") + "icons\\appicon-grey.ico");
+    public Icon IconRed = new(Environment.ProcessPath.Replace("SeedzDrive.exe", "") + "icons\\appicon-red.ico");
 
     private IconState()
     {

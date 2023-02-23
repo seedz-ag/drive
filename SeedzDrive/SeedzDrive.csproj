@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
     <UseWindowsForms>True</UseWindowsForms>
-    <ApplicationIcon>appicon.ico</ApplicationIcon>
+    <ApplicationIcon>icons\appicon.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="appicon.ico" />
+    <Content Include="icons\appicon.ico" />
   </ItemGroup>
 
   <ItemGroup>
@@ -54,17 +54,17 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="appicon-grey.ico">
+    <None Update="icons\appicon-grey.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
-    <None Update="appicon-red.ico">
+    <None Update="icons\appicon-red.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Preferences.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Preferences.Designer.cs</LastGenOutput>
     </None>
-    <None Update="appicon.ico">
+    <None Update="icons\appicon.ico">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="icons\appicon.png">
