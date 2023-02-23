@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="Seedz Drive - Logs" Height="450" Width="800" FontFamily="Microsoft Sans Serif" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
-        <TextBox x:Name="LogTxb" Width="750" Margin="25,31,25,31"/>
+        <TextBox x:Name="LogTxb" Width="750" Margin="25,31,25,31" IsReadOnly="True"/>
     </Grid>
 </Window>

@@ -165,4 +165,13 @@
   <data name="NotifyIconMenuOpenFolder" xml:space="preserve">
     <value>Abrir Pasta</value>
   </data>
+  <data name="NotUploadedBecauseLarger" xml:space="preserve">
+    <value>envio falhou por que o arquivo tem mais que 10MB.</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>envio concluído.</value>
+  </data>
+  <data name="Uploading" xml:space="preserve">
+    <value>Enviando</value>
+  </data>
 </root>

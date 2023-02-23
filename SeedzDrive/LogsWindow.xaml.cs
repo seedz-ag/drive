@@ -14,6 +14,13 @@ public partial class LogsWindow : Window
         InitializeComponent();
     }
 
+    protected override void OnActivated(EventArgs e)
+    {
+        LogService.GetInstance().Show(this);
+
+        base.OnActivated(e);
+    }
+
     protected override void OnDeactivated(EventArgs e)
     {
         if (Visibility != Visibility.Hidden && WindowState == WindowState.Minimized)

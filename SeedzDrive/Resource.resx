@@ -165,4 +165,13 @@
   <data name="NotifyIconMenuOpenFolder" xml:space="preserve">
     <value>Open Folder</value>
   </data>
+  <data name="NotUploadedBecauseLarger" xml:space="preserve">
+    <value>was not uploaded because it is larger than 10MB.</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>upload complete.</value>
+  </data>
+  <data name="Uploading" xml:space="preserve">
+    <value>Uploading</value>
+  </data>
 </root>

@@ -165,4 +165,13 @@
   <data name="NotifyIconMenuOpenFolder" xml:space="preserve">
     <value>Abre la carpeta</value>
   </data>
+  <data name="NotUploadedBecauseLarger" xml:space="preserve">
+    <value>la carga falló porque el archivo tiene más de 10 MB.</value>
+  </data>
+  <data name="UploadComplete" xml:space="preserve">
+    <value>carga completada.</value>
+  </data>
+  <data name="Uploading" xml:space="preserve">
+    <value>Cargando</value>
+  </data>
 </root>

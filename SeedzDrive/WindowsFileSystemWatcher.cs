@@ -43,6 +43,8 @@ public sealed class WindowsFileSystemWatcher
 
     public static void OnChanged(object source, FileSystemEventArgs e)
     {
+        LogService.GetInstance().Write($"{DateTime.Now} - {Resource.Uploading} {e.FullPath}");
+
         if (GetFileSize(e.FullPath) <= 10000000) //Limit of 10MB
         {
             try
@@ -69,11 +71,18 @@ public sealed class WindowsFileSystemWatcher
 
                 var response = restClient.Execute(request);
                 response.ThrowIfError(); //todo: verify
+
+                LogService.GetInstance().Write($"{DateTime.Now} - {e.FullPath} {Resource.UploadComplete}");
             }
             catch (Exception exception)
             {
+                LogService.GetInstance().Write($"{DateTime.Now} - {exception.Message}");
                 IconState.GetInstance().Current = IconState.GetInstance().IconRed;
             }
+        }
+        else
+        {
+            LogService.GetInstance().Write($"{DateTime.Now} - {e.FullPath} {Resource.NotUploadedBecauseLarger}");
         }
     }
 

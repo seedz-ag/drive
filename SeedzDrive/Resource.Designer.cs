@@ -203,5 +203,32 @@ namespace SeedzDrive {
                 return ResourceManager.GetString("NotifyIconMenuOpenFolder", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to was not uploaded because it is larger than 10MB..
+        /// </summary>
+        public static string NotUploadedBecauseLarger {
+            get {
+                return ResourceManager.GetString("NotUploadedBecauseLarger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to upload complete..
+        /// </summary>
+        public static string UploadComplete {
+            get {
+                return ResourceManager.GetString("UploadComplete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Uploading.
+        /// </summary>
+        public static string Uploading {
+            get {
+                return ResourceManager.GetString("Uploading", resourceCulture);
+            }
+        }
     }
 }
