@@ -43,34 +43,42 @@ public sealed class WindowsFileSystemWatcher
 
     public static void OnChanged(object source, FileSystemEventArgs e)
     {
-        try
+        if (GetFileSize(e.FullPath) <= 10000000) //Limit of 10MB
         {
-            var client = new HttpClient();
-            var token = client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
+            try
             {
-                Address = Preferences.Default.AuthUri,
+                var client = new HttpClient();
+                var token = client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
+                {
+                    Address = Preferences.Default.AuthUri,
 
-                ClientId = Preferences.Default.ClientId,
-                ClientSecret = Preferences.Default.Secret,
-                Scope = "client-credentials-server/tenantid"
-            }).Result;
+                    ClientId = Preferences.Default.ClientId,
+                    ClientSecret = Preferences.Default.Secret,
+                    Scope = "client-credentials-server/tenantid"
+                }).Result;
 
-            var restClient = new RestClient(Preferences.Default.DriveAPIUri);
-            var request = new RestRequest("", Method.Post)
+                var restClient = new RestClient(Preferences.Default.DriveAPIUri);
+                var request = new RestRequest("", Method.Post)
+                {
+                    AlwaysMultipartFormData = true
+                };
+
+                request.AddHeader("Content-Type", "multipart/form-data");
+                request.AddHeader("Authorization", $"Bearer {token.AccessToken}");
+                request.AddFile("file", e.FullPath);
+
+                var response = restClient.Execute(request);
+                response.ThrowIfError(); //todo: verify
+            }
+            catch (Exception exception)
             {
-                AlwaysMultipartFormData = true
-            };
-
-            request.AddHeader("Content-Type", "multipart/form-data");
-            request.AddHeader("Authorization", $"Bearer {token.AccessToken}");
-            request.AddFile("file", e.FullPath);
-
-            var response = restClient.Execute(request);
-            response.ThrowIfError(); //todo: verify
+                IconState.GetInstance().Current = IconState.GetInstance().IconRed;
+            }
         }
-        catch (Exception exception)
-        {
-            IconState.GetInstance().Current = IconState.GetInstance().IconRed;
-        }
+    }
+
+    private static long GetFileSize(string FilePath)
+    {
+        return File.Exists(FilePath) ? new FileInfo(FilePath).Length : 0;
     }
 }
