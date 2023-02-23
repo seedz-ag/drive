@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:SeedzDrive"
         xmlns:tb="http://www.hardcodet.net/taskbar" x:Class="SeedzDrive.LogsWindow"
         mc:Ignorable="d"
-        Title="Seedz Drive - Logs" Height="450" Width="800" FontFamily="Microsoft Sans Serif" WindowStyle="SingleBorderWindow" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+        Title="Seedz Drive - Logs" Height="450" Width="800" FontFamily="Microsoft Sans Serif" WindowStartupLocation="CenterScreen" ResizeMode="CanMinimize">
     <Grid>
         <TextBox x:Name="LogTxb" Width="750" Margin="25,31,25,31"/>
     </Grid>

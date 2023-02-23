@@ -15,7 +15,7 @@ internal sealed class IconState
     private static IconState? _instance;
     private static Icon _current;
     private static NotifyIcon _notifyIcon;
-    private static LogsWindow _logsWindow;
+    private static LogsWindow _logsWindow = new LogsWindow();
     private static MainWindow _mainWindow = new MainWindow();
 
     public Icon Icon = new("appicon.ico");
@@ -71,6 +71,8 @@ internal sealed class IconState
 
     private static void OpenLogs(object? sender, EventArgs e)
     {
+        _notifyIcon.Visible = false;
+
         _logsWindow.Icon = IconState.GetInstance().Current.ToImageSource();
         _logsWindow.Visibility = Visibility.Visible;
         _logsWindow.WindowState = WindowState.Normal;
