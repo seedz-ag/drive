@@ -204,15 +204,15 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Seedz Drive"
-        "ProductCode" = "8:{7B55EAD5-CDD6-41E0-848B-F7A375F16B39}"
-        "PackageCode" = "8:{92824F51-D210-453F-890A-0E99544B9AE1}"
+        "ProductCode" = "8:{3F972374-00D2-438B-BA74-74041C3D72F4}"
+        "PackageCode" = "8:{646492FF-A051-46F5-B4D1-2A2D66286A21}"
         "UpgradeCode" = "8:{295EE48A-E732-45B0-BD2F-AE26BCBE9108}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:FALSE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.0.1"
         "Manufacturer" = "8:Seedz"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:https://www.seedz.ag"
@@ -222,7 +222,7 @@
         "Keywords" = "8:"
         "ARPCOMMENTS" = "8:Seedz Drive is file integration application for Seedz Data HUB."
         "ARPURLINFOABOUT" = "8:https://www.seedz.ag"
-        "ARPPRODUCTICON" = "8:"
+        "ARPPRODUCTICON" = "8:_BB9D6072FD8746239BF3D07E9DA23A9A"
         "ARPIconIndex" = "3:0"
         "SearchPath" = "8:"
         "UseSystemSearchPath" = "11:TRUE"
@@ -832,7 +832,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_0EDC0C0F1DE84B5984C5C3B8E4F30904"
             {
-            "SourcePath" = "8:..\\..\\obj\\Debug\\net6.0-windows\\apphost.exe"
+            "SourcePath" = "8:"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_46911C91AE3040D1AA54241F8A85E478"
@@ -860,7 +860,7 @@
             }
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5B1BE1A7877E444F8D6D2050AD77DBDA"
             {
-            "SourcePath" = "8:..\\..\\obj\\Debug\\net6.0-windows\\SeedzDrive.dll"
+            "SourcePath" = "8:..\\..\\obj\\Release\\net6.0-windows\\SeedzDrive.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_46911C91AE3040D1AA54241F8A85E478"

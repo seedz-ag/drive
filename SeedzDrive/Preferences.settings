@@ -2,6 +2,12 @@
 <SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="SeedzDrive" GeneratedClassName="Preferences">
   <Profiles />
   <Settings>
+    <Setting Name="AuthUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://seedzintegration.auth.us-east-1.amazoncognito.com/oauth2/token</Value>
+    </Setting>
+    <Setting Name="DriveAPIUri" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">https://api-drive.integration.seedz.ag/upload</Value>
+    </Setting>
     <Setting Name="ClientId" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
     </Setting>
@@ -10,12 +16,6 @@
     </Setting>
     <Setting Name="Folder" Type="System.String" Scope="User">
       <Value Profile="(Default)" />
-    </Setting>
-    <Setting Name="AuthUri" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://integration-panel-sdz.auth.us-east-1.amazoncognito.com/oauth2/token</Value>
-    </Setting>
-    <Setting Name="DriveAPIUri" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">https://atnc86qd85.execute-api.us-east-1.amazonaws.com/dev/upload</Value>
     </Setting>
   </Settings>
 </SettingsFile>

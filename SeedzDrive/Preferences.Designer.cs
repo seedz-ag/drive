@@ -12,7 +12,7 @@ namespace SeedzDrive {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.4.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.5.0.0")]
     internal sealed partial class Preferences : global::System.Configuration.ApplicationSettingsBase {
         
         private static Preferences defaultInstance = ((Preferences)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Preferences())));
@@ -20,6 +20,24 @@ namespace SeedzDrive {
         public static Preferences Default {
             get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://seedzintegration.auth.us-east-1.amazoncognito.com/oauth2/token")]
+        public string AuthUri {
+            get {
+                return ((string)(this["AuthUri"]));
+            }
+        }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("https://api-drive.integration.seedz.ag/upload")]
+        public string DriveAPIUri {
+            get {
+                return ((string)(this["DriveAPIUri"]));
             }
         }
         
@@ -56,24 +74,6 @@ namespace SeedzDrive {
             }
             set {
                 this["Folder"] = value;
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://integration-panel-sdz.auth.us-east-1.amazoncognito.com/oauth2/token")]
-        public string AuthUri {
-            get {
-                return ((string)(this["AuthUri"]));
-            }
-        }
-        
-        [global::System.Configuration.ApplicationScopedSettingAttribute()]
-        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("https://atnc86qd85.execute-api.us-east-1.amazonaws.com/dev/upload")]
-        public string DriveAPIUri {
-            get {
-                return ((string)(this["DriveAPIUri"]));
             }
         }
     }

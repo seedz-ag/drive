@@ -38,6 +38,7 @@ public sealed class WindowsFileSystemWatcher
         _fileSystemWatcher.Changed += OnChanged;
         _fileSystemWatcher.Created += OnChanged;
 
+        _fileSystemWatcher.IncludeSubdirectories = true;
         _fileSystemWatcher.EnableRaisingEvents = true;
     }
 
@@ -56,7 +57,7 @@ public sealed class WindowsFileSystemWatcher
 
                     ClientId = Preferences.Default.ClientId,
                     ClientSecret = Preferences.Default.Secret,
-                    Scope = "client-credentials-server/tenantid"
+                    Scope = "https://api-drive.integration.seedz.ag/tenantid"
                 }).Result;
 
                 var restClient = new RestClient(Preferences.Default.DriveAPIUri);
@@ -65,8 +66,11 @@ public sealed class WindowsFileSystemWatcher
                     AlwaysMultipartFormData = true
                 };
 
+                var path = string.IsNullOrWhiteSpace(Path.GetDirectoryName(e.Name)) ? Path.GetDirectoryName(e.Name) : Path.GetDirectoryName(e.Name).Replace("\\", "/");
+
                 request.AddHeader("Content-Type", "multipart/form-data");
                 request.AddHeader("Authorization", $"Bearer {token.AccessToken}");
+                request.AddParameter("path", path);
                 request.AddFile("file", e.FullPath);
 
                 var response = restClient.Execute(request);
